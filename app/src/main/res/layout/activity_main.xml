@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hjq.shape.view.ShapeEditText
+            android:id="@+id/encrypt_edit"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:gravity="top"
+            android:hint="密文"
+            android:padding="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_radius="16dp"
+            app:shape_solidColor="#0f000000" />
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/decrpt_btn"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="解密"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/saveEncrptMsg"
+            app:layout_constraintTop_toBottomOf="@id/encrypt_edit"
+            app:shape_radius="13dp"
+            app:shape_solidColor="@color/teal_700" />
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/saveEncrptMsg"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="保存密文"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toRightOf="@id/decrpt_btn"
+            app:layout_constraintRight_toLeftOf="@id/copyEncrptMsg"
+            app:layout_constraintTop_toTopOf="@id/decrpt_btn"
+            app:shape_radius="13dp"
+            app:shape_solidColor="@color/teal_700" />
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/copyEncrptMsg"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="复制密文"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toRightOf="@id/saveEncrptMsg"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/decrpt_btn"
+            app:shape_radius="13dp"
+            app:shape_solidColor="@color/teal_700" />
+
+
+        <com.hjq.shape.view.ShapeEditText
+            android:id="@+id/decrypt_edit"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:hint="明文"
+            android:padding="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/decrpt_btn"
+            app:shape_radius="16dp"
+            app:shape_solidColor="#0f000000" />
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/encrpt_btn"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="加密"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/saveEncrptMsg"
+            app:layout_constraintTop_toBottomOf="@id/decrypt_edit"
+            app:shape_radius="13dp"
+            app:shape_solidColor="@color/teal_700" />
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/saveDecrptMsg"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="保存明文"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toRightOf="@id/encrpt_btn"
+            app:layout_constraintRight_toLeftOf="@id/copyDecrptMsg"
+            app:layout_constraintTop_toTopOf="@id/encrpt_btn"
+            app:shape_radius="13dp"
+            app:shape_solidColor="@color/teal_700" />
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/copyDecrptMsg"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="复制明文"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toRightOf="@id/saveDecrptMsg"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/encrpt_btn"
+            app:shape_radius="13dp"
+            app:shape_solidColor="@color/teal_700" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
