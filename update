@@ -1,16 +1,13 @@
 {
-    "appVersion":"2.0.39",
+    "appVersion":"2.0.42.1",
     "forceUpdate":false,
-    "jumpLink":"http://uu.51haoka.cc/index?k=TFhrRHppc3BJWnc9",
-    "title": "安卓哥的电话铺",
-    "updateMessage":" 公众号 派大星开发，抓紧关注不迷路。\n
-    1.优化UC,夸克cookie复制不全问题
-    2.解决道长一系列问题
-    3.升级exo 1.4.0
-    4.更新内置js
-    5.音频增加背景图,优化体验
-    6.UC,夸克登录后续手动返回，并记录当前登录态，防止登录设备过多的问题
-    7.移除网络线路可以删除功能
-    8.移除py依赖，减小包体
+    "jumpLink":"https://ktt.pinduoduo.com/t/bx41lbGegU",
+    "title": "安卓哥的快团团",
+    "updateMessage":" 公众号 派大星开发，抓紧关注不迷路。 我的快团团上线了，欢迎大家支持\n
+    1.与TV版webDav备份同步
+    2.修复直播线路不可复制的bug
+    3.优化全屏状态下的选集提示
+    4.修复ijk不能播放虎牙的问题
+    5.修复在历史记录合并开启时，虎牙直播不能播放问题
     \n(流量不够用?点击流量卡看看，零差评的好电话卡)"
 }
